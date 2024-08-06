@@ -127,3 +127,81 @@ color: green;
   .profit.red{
 color: red;
   }
+/* Dashboard.css */
+.dashboard {
+  width: 100%;
+  background-color: black;
+}
+
+.main_container {
+  margin: 20px;
+}
+
+.heading {
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-auto-rows: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six";
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
+
+  .five {
+    grid-area: five;
+  }
+
+  .six {
+    grid-area: six;
+  }
+
+  /* Additional styling for mobile devices */
+  .icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-badge {
+    font-size: 12px;
+    padding: 1px;
+  }
+
+  .list {
+    height: auto;
+  }
+
+  .listli {
+    height: auto;
+    padding: 10px;
+  }
+}

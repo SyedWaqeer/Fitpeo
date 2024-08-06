@@ -23,3 +23,57 @@
     scrollbar-color: #6c757d #343a40; /* thumb and track color */
   }
   
+  .card {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 8px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.feedback-text {
+    font-size: 0.875rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    .feedback-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .feedback-text {
+        font-size: 0.75rem;
+    }
+}

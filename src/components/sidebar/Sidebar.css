@@ -4,6 +4,46 @@
     background-color: #282c34;
   }
   .active-icon {
-    color: blue !important;
+    color: rgb(53, 53, 247) !important;
   }
-  
+  /* Sidebar Styles */
+.sidebar-open {
+  width: 250px;
+  transition: width 0.3s;
+}
+
+.sidebar-closed {
+  width: 0;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.sidebar-open a {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-closed a {
+  display: none;
+}
+
+/* Toggle button styles */
+.btn-dark {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+/* Hide sidebar in mobile view */
+@media (max-width: 992px) {
+  .sidebar-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #343a40; /* Dark background */
+    overflow-y: auto;
+    z-index: 999;
+  }
+}

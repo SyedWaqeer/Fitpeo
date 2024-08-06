@@ -30,3 +30,51 @@
   color: white !important;
   opacity: 1; /* Override default opacity */
 }
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.search-bar {
+  max-width: 300px;
+}
+
+.user-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .search-bar {
+    display: none;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .user-avatar {
+    height: 30px;
+    width: 30px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.875rem;
+  }
+}
