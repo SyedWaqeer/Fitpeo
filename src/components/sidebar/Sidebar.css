@@ -1,0 +1,9 @@
+.sidebar {
+    align-items: center;
+    width: 60px;
+    background-color: #282c34;
+  }
+  .active-icon {
+    color: blue !important;
+  }
+  

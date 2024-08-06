@@ -1,0 +1,129 @@
+.dashboard{
+    width: 100%;
+    background-color: black;
+}
+.main_container{
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-left: 15px;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+}
+.heading{
+    color: white;
+}
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: auto;
+  }
+  .one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    
+  }
+  .two {
+    grid-column: 3 / 4;
+    grid-row: 1;
+   
+  }
+  .three {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  .four {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .five {
+    grid-column: 1 / 3;
+    grid-row: 3 / 6;
+  }
+  .six {
+    grid-column: 3 / 4;
+    grid-row: 3 / 6;
+  }
+  .rowgap{
+    --bs-gutter-x: 1rem !important;
+  }
+  .list{
+    height: 210px;
+  }
+
+  .listli{
+    color: #ffffff;
+    height: 70px;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;  /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    /* Dark background color */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+  }
+  
+  .icon {
+    color: #ffffff; /* Icon color */
+    font-size: 24px; /* Icon size */
+  }
+  
+  .icon-container.green {
+    background-color: #05ce15;
+  }
+  
+  .icon-container.blue {
+    background-color: #1205ca; /* Blue background */
+  }
+  
+  .icon-container.red {
+    background-color: #ec6e6e;
+     /* Red background */
+  }
+  
+  .icon-container.yellow {
+    background-color: #f4f804; /* Pink background */
+  }
+  .icon-badge.red {
+    color: #ec6e6e; /* Pink background */
+  }
+  .icon-badge.blue {
+   color: #1205ca; /* Pink background */
+  }
+  .icon-badge.green {
+    color: #05ce15; /* Pink background */
+  }
+  .icon-badge.yellow {
+    color: #f4f804; /* Pink background */
+  }
+  .icon-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #ffffff; /* Badge background color */
+     /* Badge icon color */
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 12px; /* Badge icon size */
+  }
+  .inline-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inline-container h2 {
+    margin-right: 100px; /* Adjust spacing as needed */
+  }
+  
+  .inline-container p {
+    margin: 0; /* Remove default margin */
+  }
+  .profit.green{
+color: green;
+  }
+  .profit.red{
+color: red;
+  }

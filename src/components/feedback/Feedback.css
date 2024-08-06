@@ -1,0 +1,25 @@
+.scrollable {
+    max-height: 330px;
+    overflow-y: auto;
+  }
+  
+  /* Webkit-based browsers (Chrome, Safari) */
+  .scrollable::-webkit-scrollbar {
+    width: 6px; /* Change this value to adjust the width */
+  }
+  
+  .scrollable::-webkit-scrollbar-track {
+    background: #343a40; /* Match with your dark theme */
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: #6c757d; /* Change this color as needed */
+    border-radius: 10px;
+  }
+  
+  /* Firefox */
+  .scrollable {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #6c757d #343a40; /* thumb and track color */
+  }
+  
